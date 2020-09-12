@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath> //pow calculates interest
+using namespace std;
+
+int main(){
+  float amount;
+  float principle = 10000;
+  float rate = .01;
+  //every day investment amount increases
+  for(int day = 0; day <= 20; day++){
+  //formula
+    amount = principle * pow(1 + rate, day);
+    cout << day << " ----- " << amount << endl;
+  }
+  return 0;
+}
